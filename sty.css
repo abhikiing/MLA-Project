@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E7EB; /* Light background color */
+    margin: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115vh; /* Full viewport height */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Column layout for form and submission view */
+    width: 75%;
+    background-color: white; /* White background for container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    /* height: 110vh; */
+}
+
+/* Form Styles */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #1E3A8A; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Column layout for input groups */
+    margin-bottom: 16px; /* Space between input groups */
+}
+
+.input-group label {
+    margin-bottom: 8px; /* Space below labels */
+    color: #333; /* Label color */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    padding: 12px; /* Padding inside input fields */
+    border: 1px solid #D1D5DB; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+button {
+    background-color: #1E3A8A; /* Button background color */
+    color: white; /* Button text color */
+    padding: 12px 20px; /* Padding inside buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #1B2F6E; /* Darker shade on hover */
+}
+
+/* Submission View Styles */
+#submission-details {
+    margin-top: 20px; /* Space above submission details */
+}
+
+.entry {
+    background: #f9f9f9; /* Light grey background for entries */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside entry */
+    margin: 15px 0; /* Space between entries */
+    transition: transform 0.2s; /* Transition effect for hover */
+}
+
+.entry:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.entry h4 {
+    margin: 0; /* Remove margin for better alignment */
+    color: #1E3A8A; /* Heading color for entries */
+}
+
+.entry p {
+    margin: 5px 0; /* Space between paragraphs */
+    color: #555; /* Text color */
+}
+
+/* Button Styles for Submission View */
+.entry button {
+    background-color: #1E3A8A; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.entry button:hover {
+    background-color: #1B2F6E; /* Darker shade on hover */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Change layout on larger screens */
+    }
+    .input-group {
+        flex-direction: row; /* Row layout for input groups */
+        align-items: center; /* Center align items */
+    }
+    .input-group label {
+        flex-basis: 30%; /* Fixed width for labels */
+        margin-bottom: 0; /* Remove margin for better alignment */
+    }
+    /* .input-group input { */
+        /* flex-grow: */
+    
+}

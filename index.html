@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file -->
+    <title>User Entry Form</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <h1>MLA of Bandikui!</h1>
+    </div>
+    <div class="right">
+        <div class="header">
+            <div class="logo">MLA Bhag Chand Takda</div>
+        </div>
+        <button class="submission-view-button" onclick="window.location.href='submission-view.html'">Submission View</button>
+        <h2>Daily User Details</h2>
+        <form id="userForm">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="father" placeholder="Father Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="Anniversary" placeholder="Date of Anniversary" required>
+                <input type="text" id="Address" placeholder="Address" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="Voter" placeholder="Voter ID" required>
+                <input type="text" id="Gram" placeholder="Gram Panchayat" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="Samiti" placeholder="Panchayat Samiti" required>
+                <input type="text" id="mobile" placeholder="Mobile No" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="present" placeholder="Present Post" required>
+                <input type="text" id="past" placeholder="Past Post" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="work" placeholder="Work/Complaint" required>
+                <input type="file" id="image" accept="image/*" required>
+            </div>
+            <div class="input-group">
+                <input type="date" id="dob" required>
+            </div>
+            <button type="submit">Submit Details</button>
+            <div class="social-buttons">
+                <button type="button"><i class="fab fa-facebook-f"></i> Facebook!</button>
+                <button type="button"><i class="fab fa-twitter"></i> Twitter!</button>
+            </div>
+        </form>
+        <!--  -->
+        <div class="footer">
+            &copy; Team Error 420
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
